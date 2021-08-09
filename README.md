@@ -41,19 +41,6 @@
 
 #### Explanation of function
 
-##### Notations
-
-| Python Data Type                                             |
-| ------------------------------------------------------------ |
-| <span style="color:blue">***Integer***</span>                |
-| <span style="color:red">***String***</span>                  |
-| <span style="color:purple">***List***</span>                 |
-| <span style="color: fuchsia">***Dictionary*** </span>        |
-| <span style="color: green">***tf.keras.Model*** </span>      |
-| <span style="color: goldenrod">***pandas.DataFrame***</span> |
-
-
-
 ##### main.py
 
 - **`experiment1_by_negaCaseNum(...)`**
@@ -62,13 +49,13 @@
 
   - Parameters
 
-    | Name                                                 | About                                            |
-    | ---------------------------------------------------- | ------------------------------------------------ |
-    | <span style="color:purple">`negaCaseNum_list`</span> | 실험해보고 싶은 부정사례 데이터 수량들           |
-    | <span style="color:blue">`iterNum`</span>            | 원하는 OCF-B 알고리즘 진행 iteration 횟수        |
-    | <span style="color:red">`fileName`</span>            | one class만 가지고 있는 데이터셋의 파일명+확장자 |
-    | <span style="color:blue">`userLimit` </span>         | 데이터셋 내 최대 사용자 ID                       |
-    | <span style="color:blue">`itemLimit` </span>         | 데이터셋 내 최대 아이템 ID                       |
+    | Name                                                 | Type                                          | About                                            |
+    | ---------------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
+    | <span style="color:purple">`negaCaseNum_list`</span> | <span style="color:purple">***List***</span>  | 실험해보고 싶은 부정사례 데이터 수량들           |
+    | <span style="color:blue">`iterNum`</span>            | <span style="color:blue">***Integer***</span> | 원하는 OCF-B 알고리즘 진행 iteration 횟수        |
+    | <span style="color:red">`fileName`</span>            | <span style="color:red">***String***</span>   | one class만 가지고 있는 데이터셋의 파일명+확장자 |
+    | <span style="color:blue">`userLimit` </span>         | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 사용자 ID                       |
+    | <span style="color:blue">`itemLimit` </span>         | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 아이템 ID                       |
 
   
 
@@ -78,12 +65,12 @@
 
   - Parameters
 
-    | Name                                            | About                                                        |
-    | ----------------------------------------------- | ------------------------------------------------------------ |
-    | <span style="color:red">`eval_index`</span>     | evaluation metric 명                                         |
-    | <span style="color:blue">`iter`</span>          | OCF-B 알고리즘의 iteration 횟수                              |
-    | <span style="color:red">`dataName`</span>       | 결과 그래프 명                                               |
-    | <span style="color:fuchsia">`eval_datas`</span> | 그래프로 출력할 결과 데이터<br/>*Example :* `{'n': 50000, 0: 0.905..., 1: 0.944.., 2: 0.958.. } ` |
+    | Name                                            | Type                                                  | About                                                        |
+    | ----------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
+    | <span style="color:red">`eval_index`</span>     | <span style="color:red">***String***</span>           | evaluation metric 명                                         |
+    | <span style="color:blue">`iter`</span>          | <span style="color:blue">***Integer***</span>         | OCF-B 알고리즘의 iteration 횟수                              |
+    | <span style="color:red">`dataName`</span>       | <span style="color:red">***String***</span>           | 결과 그래프 명                                               |
+    | <span style="color:fuchsia">`eval_datas`</span> | <span style="color: fuchsia">***Dictionary*** </span> | 그래프로 출력할 결과 데이터<br/>*Example :* `{'n': 50000, 0: 0.905..., 1: 0.944.., 2: 0.958.. } ` |
 
     
 
@@ -95,13 +82,13 @@
 
   - Parameters
 
-    | Name                                               | About                                                        |
-    | -------------------------------------------------- | ------------------------------------------------------------ |
-    | <span style="color:blue">`num`</span>              | 생성하고 싶은 부정사례 데이터 수량                           |
-    | <span style="color:purple">`added_pair`</span>     | 부정사례 데이터 생성时，생성하면 안되는  [userID, movieID] 형태의 데이터 list |
-    | <span style="color:purple">`added_np_train`</span> | 다음 iteration 훈련에 사용될 [userID, movieID, label, xx] 형태의 데이터 list |
-    | <span style="color:blue">`userID_limit`</span>     | 데이터셋 내 최대 사용자 ID                                   |
-    | <span style="color:blue">`itemID_limit`</span>     | 데이터셋 내 최대 아이템 ID                                   |
+    | Name                                               | Type                                          | About                                                        |
+    | -------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------ |
+    | <span style="color:blue">`num`</span>              | <span style="color:blue">***Integer***</span> | 생성하고 싶은 부정사례 데이터 수량                           |
+    | <span style="color:purple">`added_pair`</span>     | <span style="color:purple">***List***</span>  | 부정사례 데이터 생성时，생성하면 안되는  [userID, movieID] 형태의 데이터 list |
+    | <span style="color:purple">`added_np_train`</span> | <span style="color:purple">***List***</span>  | 다음 iteration 훈련에 사용될 [userID, movieID, label, xx] 형태의 데이터 list |
+    | <span style="color:blue">`userID_limit`</span>     | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 사용자 ID                                   |
+    | <span style="color:blue">`itemID_limit`</span>     | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 아이템 ID                                   |
 
 
 
@@ -111,10 +98,10 @@
 
   - Parameters
 
-    | Name                                     | About                            |
-    | ---------------------------------------- | -------------------------------- |
-    | <span style="color:green">`model`</span> | 훈련된 Matrix Factorization 모델 |
-    | <span style="color:purple">`test`</span> | 모델 성능 측정에 사용될 데이터셋 |
+    | Name                                     | Type                                                    | About                            |
+    | ---------------------------------------- | ------------------------------------------------------- | -------------------------------- |
+    | <span style="color:green">`model`</span> | <span style="color: green">***tf.keras.Model*** </span> | 훈련된 Matrix Factorization 모델 |
+    | <span style="color:purple">`test`</span> | <span style="color:purple">***List***</span>            | 모델 성능 측정에 사용될 데이터셋 |
 
 
 
@@ -128,13 +115,13 @@
 
   - Parameters
 
-    | Name                                           | About                                                    |
-    | ---------------------------------------------- | -------------------------------------------------------- |
-    | <span style="color:blue">`numNegaCase`</span>  | OCF-B 알고리즘을 통해 생성하고 싶은 부정사례 데이터 수량 |
-    | <span style="color:blue">`iter`</span>         | OCF-B 알고리즘 iteration 횟수                            |
-    | <span style="color:red">`fileName`</span>      | one class만 가지고 있는 데이터셋의 파일명+확장자         |
-    | <span style="color:blue">`userID_limit`</span> | 데이터셋 내 최대 사용자 ID                               |
-    | <span style="color:blue">`itemID_limit`</span> | 데이터셋 내 최대 아이템 ID                               |
+    | Name                                           | Type                                          | About                                                    |
+    | ---------------------------------------------- | --------------------------------------------- | -------------------------------------------------------- |
+    | <span style="color:blue">`numNegaCase`</span>  | <span style="color:blue">***Integer***</span> | OCF-B 알고리즘을 통해 생성하고 싶은 부정사례 데이터 수량 |
+    | <span style="color:blue">`iter`</span>         | <span style="color:blue">***Integer***</span> | OCF-B 알고리즘 iteration 횟수                            |
+    | <span style="color:red">`fileName`</span>      | <span style="color:red">***String***</span>   | one class만 가지고 있는 데이터셋의 파일명+확장자         |
+    | <span style="color:blue">`userID_limit`</span> | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 사용자 ID                               |
+    | <span style="color:blue">`itemID_limit`</span> | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 아이템 ID                               |
 
 
 
@@ -146,11 +133,11 @@
 
   - Parameters
 
-    | Name                                            | About                                        |
-    | ----------------------------------------------- | -------------------------------------------- |
-    | <span style="color: goldenrod">`dataset`</span> | `MovieLens100K_MF.csv` 데이터                |
-    | <span style="color:blue">`epo`</span>           | Matrix Factorization 모델 훈련 Epoch 수      |
-    | <span style="color:blue">`NlatentFactor`</span> | Matrix Factorization 모델 latent factor 설정 |
+    | Name                                            | Type                                                         | About                                        |
+    | ----------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------- |
+    | <span style="color: goldenrod">`dataset`</span> | <span style="color: goldenrod">***pandas.DataFrame***</span> | `MovieLens100K_MF.csv` 데이터                |
+    | <span style="color:blue">`epo`</span>           | <span style="color:blue">***Integer***</span>                | Matrix Factorization 모델 훈련 Epoch 수      |
+    | <span style="color:blue">`NlatentFactor`</span> | <span style="color:blue">***Integer***</span>                | Matrix Factorization 모델 latent factor 설정 |
 
 
 
@@ -162,12 +149,12 @@
 
   - Parameters
 
-    | Name                                            | About                                                        |
-    | ----------------------------------------------- | ------------------------------------------------------------ |
-    | <span style="color: goldenrod">`dataset`</span> | 훈련 데이터셋                                                |
-    | <span style="color:blue">`epo`</span>           | Matrix Factorization 모델 훈련 Epoch 수                      |
-    | <span style="color:blue">`NlatentFactor`</span> | Matrix Factorization 모델 latent factor 설정                 |
-    | <span style="color:blue">`testSize`</span>      | <span style="color: goldenrod">`dataset`</span>의 몇 퍼센트를 테스트 데이터셋으로 활용할 건지 |
+    | Name                                            | Type                                                         | About                                                        |
+    | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+    | <span style="color: goldenrod">`dataset`</span> | <span style="color: goldenrod">***pandas.DataFrame***</span> | 훈련 데이터셋                                                |
+    | <span style="color:blue">`epo`</span>           | <span style="color:blue">***Integer***</span>                | Matrix Factorization 모델 훈련 Epoch 수                      |
+    | <span style="color:blue">`NlatentFactor`</span> | <span style="color:blue">***Integer***</span>                | Matrix Factorization 모델 latent factor 설정                 |
+    | <span style="color:blue">`testSize`</span>      | <span style="color:blue">***Integer***</span>                | <span style="color: goldenrod">`dataset`</span>의 몇 퍼센트를 테스트 데이터셋으로 활용할 건지 |
 
     
 
@@ -179,9 +166,9 @@
 
   - Parameter
 
-    | Name                                      | About                  |
-    | ----------------------------------------- | ---------------------- |
-    | <span style="color:red">`fileName`</span> | `MovieLens100K_MF.csv` |
+    | Name                                      | Type                                        | About                  |
+    | ----------------------------------------- | ------------------------------------------- | ---------------------- |
+    | <span style="color:red">`fileName`</span> | <span style="color:red">***String***</span> | `MovieLens100K_MF.csv` |
 
 
 
@@ -198,9 +185,9 @@
 
   - Parameter
 
-    | Name                                  | About                                              |
-    | ------------------------------------- | -------------------------------------------------- |
-    | <span style="color:blue">`num`</span> | 최종적으로 Zero로 Injection할 부정사례 데이터 수량 |
+    | Name                                  | Type                                          | About                                              |
+    | ------------------------------------- | --------------------------------------------- | -------------------------------------------------- |
+    | <span style="color:blue">`num`</span> | <span style="color:blue">***Integer***</span> | 최종적으로 Zero로 Injection할 부정사례 데이터 수량 |
 
 
 
@@ -210,9 +197,9 @@
 
   - Parameter
 
-    | Name                                                 | About                                  |
-    | ---------------------------------------------------- | -------------------------------------- |
-    | <span style="color:purple">`negaCaseNum_list`</span> | 실험해보고 싶은 부정사례 데이터 수량들 |
+    | Name                                                 | Type                                         | About                                  |
+    | ---------------------------------------------------- | -------------------------------------------- | -------------------------------------- |
+    | <span style="color:purple">`negaCaseNum_list`</span> | <span style="color:purple">***List***</span> | 실험해보고 싶은 부정사례 데이터 수량들 |
 
     
 
