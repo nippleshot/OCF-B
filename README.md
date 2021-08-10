@@ -51,11 +51,11 @@
 
     | Name                                                 | Type                                          | About                                            |
     | ---------------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |
-    | <span style="color:purple">`negaCaseNum_list`</span> | <span style="color:purple">***List***</span>  | 실험해보고 싶은 부정사례 데이터 수량들           |
-    | <span style="color:blue">`iterNum`</span>            | <span style="color:blue">***Integer***</span> | 원하는 OCF-B 알고리즘 진행 iteration 횟수        |
-    | <span style="color:red">`fileName`</span>            | <span style="color:red">***String***</span>   | one class만 가지고 있는 데이터셋의 파일명+확장자 |
-    | <span style="color:blue">`userLimit` </span>         | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 사용자 ID                       |
-    | <span style="color:blue">`itemLimit` </span>         | <span style="color:blue">***Integer***</span> | 데이터셋 내 최대 아이템 ID                       |
+    | <span style="color:purple">`negaCaseNum_list`</span> | <span style="color:purple">List</span>  | 실험해보고 싶은 부정사례 데이터 수량들           |
+    | <span style="color:blue">`iterNum`</span>            | <span style="color:blue">Integer</span> | 원하는 OCF-B 알고리즘 진행 iteration 횟수        |
+    | <span style="color:red">`fileName`</span>            | <span style="color:red">String</span>   | one class만 가지고 있는 데이터셋의 파일명+확장자 |
+    | <span style="color:blue">`userLimit` </span>         | <span style="color:blue">Integer</span> | 데이터셋 내 최대 사용자 ID                       |
+    | <span style="color:blue">`itemLimit` </span>         | <span style="color:blue">Integer</span> | 데이터셋 내 최대 아이템 ID                       |
 
   
 
