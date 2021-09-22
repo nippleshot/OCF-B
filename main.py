@@ -1,6 +1,6 @@
 import random as random
 import os
-os.chdir("/content/drive/MyDrive/GraduationLab/Graduation/GraduationCode")
+os.chdir("/content/")
 from matplotlib import pyplot as plt
 import OCF_B_V1 as OCF_B
 from google.colab import files
