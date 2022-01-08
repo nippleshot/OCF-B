@@ -107,9 +107,6 @@ def experiment_by_model(models, epochs, NlatentUsers, NlatentItems, NlatentMFs, 
 
 if __name__ == "__main__":
 
-    # Epoch를 짧게 잡고 term를 길게하는게 좋은지?
-    # Epoch를 길게 잡고 term를 짧게하는게 좋은지?
-
     '''
     [ Hyperparameter Tuning ]
     * 주의 : empty list가 있으면 안됨
